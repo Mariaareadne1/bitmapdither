@@ -1,0 +1,26 @@
+{
+  "_note": "The saved look. Already baked into DEFAULTS at the top of halftone-cover.js, so this file is a backup and something to paste back into bench.html later.",
+
+  "layers": [
+    { "src": "media/look.mp4", "on": true, "weight": 1, "scale": 1, "ox": 0, "oy": 0,
+      "blend": "screen", "matte": "off", "appears": "always", "switch": "cut",
+      "every": 6, "hold": 1.6, "fade": 0.5 },
+    { "src": "media/hair.mp4", "on": true, "weight": 1, "scale": 1.02, "ox": 0, "oy": 0,
+      "blend": "negate", "matte": "dark", "appears": "pulse", "switch": "flicker",
+      "every": 6, "hold": 2, "fade": 0.25 },
+    { "src": null, "on": false, "weight": 0.02, "scale": 1, "ox": 0, "oy": 0,
+      "blend": "multiply", "matte": "light", "appears": "pulse", "switch": "flicker",
+      "every": 9, "hold": 3, "fade": 1 }
+  ],
+
+  "matte":    { "threshold": 0.5, "softness": 0.28 },
+  "stills":   { "on": false, "srcs": [], "opacity": 0.55, "blend": "screen",
+                "rate": 0.3, "size": 0.24 },
+  "tone":     { "exposure": -0.09, "contrast": 2.05, "grain": 0.075, "invert": false },
+  "dither":   { "matrix": 2, "dot": 1.5, "threshold": -0.215, "cellSample": true },
+  "knockout": { "blankAbove": 0.75, "solidBelow": 0.325 },
+  "motion":   { "holdFps": 4, "speed": 0.95, "judder": 0, "drift": 0, "printWobble": 0 },
+  "pointer":  { "mode": "disperse", "radius": 0.38, "strength": 0.75, "settle": 0.9 },
+  "framing":  "cover",
+  "colors":   { "ink": "#000000", "paper": "#ffffff" }
+}
